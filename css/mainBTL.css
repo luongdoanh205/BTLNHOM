@@ -195,18 +195,22 @@ header {
 
 /* body */
 .body{
+    position:relative;
     width: 100%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+}
+.traibody{
+    /* position:absolute; */
 }
 .hangtrai{
     background-color: #3452ff;
 }
 .main{
     width: 100%;
+    /* position:absolute; */
     background-color: #f9fafc;
     padding: 5%;
-    box-sizing: border-box;
-    position:relative;
+    /* box-sizing: border-box; */
 }
 .list-menu{
 }
@@ -242,4 +246,9 @@ header {
 }
 .div-trong div:hover img{
     transform: translateY(-15px);
+}
+
+/* footer */
+footer{
+    text-align: center;
 }
