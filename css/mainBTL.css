@@ -1,24 +1,37 @@
-*{
-    box-sizing:border-box;
-}
+
 html body{
     width: 100%;
 
 }
 header {
-    height: 7vw;
+    height: 100px;
     display:flex;
     justify-content: space-between;
     background-image: linear-gradient(45deg, #3452ff 0%, #ff1053 100%);
     align-items: center;
     max-width: 100%;
 }
+.header-left a{
+    display:flex;
+    align-items: center;
+    color:white;
+    text-decoration: none;
+
+}
+.header-left h1{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.header-left img{
+    margin-left: 20px;
+}
 .header-right{
     display:flex;
     height: 100%;
     align-items: center;
 }
-.header-right a{
+.header-right b{
+    font-weight: 400;
     display: flex;
     justify-content: center ;
     align-items: center;
@@ -37,15 +50,14 @@ header {
 .doc{
     color:white;
 }
-.header-right a img{
+.header-right b img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
 /* thông báo */
-.thong-bao{
-    
+.thong-bao{   
     z-index: 999;
     background-color:rgb(255, 255, 255);
     position:absolute;
@@ -78,10 +90,10 @@ header {
     border-color: transparent transparent rgb(255, 255, 255) transparent;
 }
 .thong-bao div:nth-child(even){
-    background-color:aliceblue;
+    background-color:rgb(220, 209, 252);
 }
 
-.thong-bao div{
+.thong-bao div a{
     padding: 10px;
     display:flex;
     height: 50px;
@@ -194,13 +206,26 @@ header {
 }
 
 /* body */
+
+
+
 .body{
     position:relative;
     width: 100%;
     /* box-sizing: border-box; */
 }
-.traibody{
-    /* position:absolute; */
+.traibody h1 {
+    color:rgb(109, 109, 109);
+
+}
+.traibody ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.traibody ul li:hover{
+    
+    background-color: #3452ff;
+    cursor: pointer;
 }
 .hangtrai{
     background-color: #3452ff;
