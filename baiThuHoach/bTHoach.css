@@ -1,0 +1,119 @@
+.container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: 'Arial', sans-serif;
+    min-width: 400px;
+    text-align: left;
+}
+
+.styled-table thead tr {
+    background-color: #2c2c4d;
+    color: #ffffff;
+    text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr td {
+    text-align: center;
+    color: #555555;
+}
+
+.styled-table tbody tr td[colspan="6"] {
+    font-style: italic;
+    color: #888888;
+}
+
+h3 {
+    font-family: 'Arial', sans-serif;
+    color: #2c2c4d;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.wrapper{
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    opacity: 0;
+    visibility: hidden;
+    top:-100%;
+    transition: 1s;
+}
+.wrapper>form{
+    padding: 0 10px;
+    /* display: flex; */
+    max-height: 500px;
+    height: 700px;
+    width:50%;
+    background-color:#ffffff;
+    position: absolute;
+    /* justify-self:center; */
+}
+.wrapper>form>div{
+    display: flex;
+    justify-content:space-around;
+}
+.button-wr{
+    right: 0;
+    bottom: 0;
+    position:absolute;
+    display:inline-block;
+}
+.button-wr button{
+    cursor: pointer;
+    margin: 10px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border: none;
+    line-height: 30px;
+    box-shadow: 0 0 10px rgb(122, 122, 122);
+    border: 3px solid aquamarine;
+
+}
+.button-wr button:hover{
+    background-color: #ffffff;
+}
+
+.button-wr button:first-child{
+    background-color:#ff6767;
+    border: 3px solid #ff6767 ;
+
+}
+.button-wr button:first-child:hover{
+    background-color: #ffffff;
+
+}
+.wrapper>form h1{
+    text-align: center;
+}
+.hienW{
+    opacity : 1;
+    visibility:visible;
+    top:0;
+}
+
+.styled-table>tbody>tr:hover{
+    background-color: #ffc3c3;
+    cursor: pointer;
+}

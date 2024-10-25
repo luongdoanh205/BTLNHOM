@@ -4,25 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="./css/mainBTL.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-        
+        <link rel="stylesheet" href="./css/mainBTL.css">
+        <link rel="stylesheet" href="./css/silde.css">
+        <link rel="stylesheet" href="./css/responsive.css">
     </head>
     <body>
     <header>
         <div class="header-left">
-            <a href="">
-
+            <a href="#">
                 <img src="./img/logoUTC.png" alt="">
-                <h1>QLSV</h1>
+                <h1>Quản lý sinh viên</h1>
             </a>
-           </div>
+        </div>
+        
         <div class="header-right">
             <b class="hocphi">
                 <i class="bi bi-bell doc"></i>
                 <div class="thong-bao">
-                    <p>Thong bao cua ban:</p>
+                    <p>Thông báo của bạn:</p>
                     <div>
                         <a>
                             <i class="bi bi-cash-coin"></i>
@@ -34,7 +35,7 @@
                     <p>Xem tất cả</p>
                 </div>
             </b>
-            <b>
+            <b class="mes">
                 <i class="bi bi-messenger doc"></i>
             </b>
             <b class="menuclick">
@@ -42,112 +43,186 @@
                 <div class="menu">
                     <p>Menu</p>
                     <div class="list-menu">
-                        
-                        <p>
-                            <i class="bi bi-bus-front"></i>
-                            <span>Đăng kí bus</span>
-                        </p>
-                        <p>
-                            <i class="bi bi-qr-code-scan"></i>
-                            <span>Thanh toán</span>
-                        </p>
-                        <p>
-                            <i class="bi bi-clipboard-check"></i>
-                            <span>Khảo sát</span>
-                        </p>
-                        <p>
-                            <i class="bi bi-file-earmark-text"></i>
-                            <span>Giấy xác nhận sinh viên</span>
-                        </p>
-                        <p>
-                            <i class="bi bi-pencil-square"></i>
-                            <span>Bài thu hoạch</span>
-                        </p>
-                        <p>
-                            <i class="bi bi-headset"></i>
-                            <span>Hỗ trợ</span>
-                        </p>
+                        <div>
+                            <a>
+                                <i class="bi bi-bus-front"></i>
+                                <span>Đăng kí bus</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a>
+                                <i class="bi bi-qr-code-scan"></i>
+                                <span>Thanh toán</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a>
+                                <i class="bi bi-clipboard-check"></i>
+                                <span>Khảo sát</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a>
+                                <i class="bi bi-file-earmark-text"></i>
+                                <span>Giấy xác nhận sinh viên</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a>
+                                <i class="bi bi-pencil-square"></i>
+                                <span>Bài thu hoạch</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a>
+                                <i class="bi bi-headset"></i>
+                                <span>Hỗ trợ</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </b>
             <b class="imgmeo">
                 <img src="./img/meoLuom.jpg" alt="">
                 <div class="profile">
-                    <p>profile</p>
-                    <p>cập nhập thông tin</p>
-                    <p>Đăng xuất</p>
-
+                    <div>
+                        <a>
+                            <i class="bi bi-person-fill"></i>
+                            <span>Profile</span>
+                        </a>
+                    </div>
+                    <div>
+                        
+                        <a>
+                            <i class="bi bi-box-arrow-right"></i>
+                            <span>Đăng xuất</span>
+                        </a>
+                    </div>
                 </div>
+            </b>
+            <b class="MNdthoai">
+                <i class="bi bi-menu-button-wide"></i>
             </b>
         </div>
     </header>
-    <div class="row body">
-        <div class=" col-lg-2 traibody">
+    <div class="slider">
+        <div class="list">
+            <div class="item ">
+                <img src="./img/utc5.png" alt="">
+                <p class="anm-text">
+                    <span>Trường đại học Giao Thông Vận tải</span>
+                    <span>Bộ giáo dục và đào tạo</span>
+                </p>
+            </div>
+            <div class="item">
+                <img src="./img/utc2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/utc3.jfif" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/utc4.jfif" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/utc1.jfif" alt="">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>          
+    
+    <div class="row body g-0">
+        <div class=" col-6 col-lg-2 traibody">
             <h1>Menu</h1>
             <ul>
-                <li>Cài đặt</li>
-                <li>Thông tin </li>
-                <li>Log out</li>
+                <li>
+                    <a href="">Cài đặt</a>
+                </li>
+                <li><a href="">Thông tin</a> </li>
+                <li><a href="">Log out</a></li>
             </ul>
         </div>
-        <div class="col-12 col-lg-10 main">
-                <div class="list-url">
-                    
-                    <div class="row hang2">
-                        <div class="col-6 col-lg-3 div-trong">
+        <div class="col-12 col-lg-10 main">  
+            <div class="row hang1 g-0">
+                        <div class="col-6 col-sm-3 div-trong">
                             <div>
-                                <img src="./img/bus.webp" alt="">
-                                <p>Đăng kí vé xe</p>
+                                <a>
+                                    <img src="./img/bus.webp" alt="">
+                                    <p>Đăng kí vé xe</p>
+                                </a>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-3 div-trong">
+                        <div class="col-6 col-sm-3 div-trong">
                             <div>
-                                <img src="./img/khaoSat.jpg" alt="">
-                                <p>Khảo sát</p>
+                                <a>
+                                    <img src="./img/khaoSat.jpg" alt="">
+                                    <p>Khảo sát</p>
+                                </a>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-3 div-trong">
+                        <div class="col-6 col-sm-3 div-trong">
                             <div>
-                                <img src="./img/giayXN.jpg" alt="">
-                                <p>Giấy xác nhận sinh viên</p>
+                                <a>
+                                    <img src="./img/giayXN.jpg" alt="">
+                                    <p>Giấy xác nhận sinh viên</p>
+                                </a>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-3 div-trong">
+                        <div class="col-6 col-sm-3 div-trong">
                             <div>
-                                <img src="./img/thuHoach.png" alt="">
-                                <p>Hỗ trợ sinh viên</p>
-                            </div>
-                        </div>
-        
-                    </div>
-                    <div class="row hang2">
-                        <div class="col-6 col-lg-3 div-trong">
-                            <div>
-                                <img src="./img/bus.webp" alt="">
-                                <p>Đăng kí vé xe</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3 div-trong">
-                            <div>
-                                <img src="./img/khaoSat.jpg" alt="">
-                                <p>Khảo sát</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3 div-trong">
-                            <div>
-                                <img src="./img/giayXN.jpg" alt="">
-                                <p>Giấy xác nhận sinh viên</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3 div-trong">
-                            <div>
-                                <img src="./img/thuHoach.png" alt="">
-                                <p>Hỗ trợ sinh viên</p>
+                                <a>
+                                    <img src="./img/hoTro.png" alt="">
+                                    <p>Hỗ trợ sinh viên</p>
+                                </a>
                             </div>
                         </div>
         
+            </div>
+            <div class="row hang1 g-0">
+                <div class="col-6 col-sm-3 div-trong">
+                    <div>
+                        <a>
+                            <img src="./img/QRcode.svg" alt="">
+                            <p>QR code</p>
+                        </a>
                     </div>
                 </div>
+                <div class="col-6 col-sm-3 div-trong">
+                    <div>
+                        <a>
+                            <img src="./img/kitucxa.png" alt="">
+                            <p>Kí túc xá</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 div-trong">
+                    <div>
+                        <a href="./baiThuHoach/baiTH.html">
+                            <img src="./img/baiThuHoach.png" alt="">
+                            <p>Bài thu hoạch</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 div-trong">
+                    <div>
+                        <a>
+                            <img src="./img/thuHoach.png" alt="">
+                            <p>Hỗ trợ sinh viên</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
         </div>
     </div>
 
@@ -159,5 +234,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/scriptBTL.js"></script>
+    
 </body>
 </html>

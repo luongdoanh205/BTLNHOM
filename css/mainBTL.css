@@ -4,12 +4,14 @@ html body{
 
 }
 header {
+    position: fixed;
     height: 100px;
     display:flex;
     justify-content: space-between;
     background-image: linear-gradient(45deg, #3452ff 0%, #ff1053 100%);
     align-items: center;
-    max-width: 100%;
+    width: 100%;
+    z-index: 1000;
 }
 .header-left a{
     display:flex;
@@ -19,7 +21,7 @@ header {
 
 }
 .header-left h1{
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 10px;
 }
 .header-left img{
@@ -29,6 +31,8 @@ header {
     display:flex;
     height: 100%;
     align-items: center;
+    right: 0;
+
 }
 .header-right b{
     font-weight: 400;
@@ -39,13 +43,19 @@ header {
     margin: 20px;
     height: 40%;
     width: 40px;
-    color:white;    
+    /* color:white;     */
     border-radius: 50%;
     background-color: #e35a9a;
     position :relative;
     text-decoration: none;
     color:inherit;
     cursor:pointer;
+}
+.header-right .MNdthoai{
+    display: none;
+}
+.MNdthoai i{
+    color: #f9fafc;
 }
 .doc{
     color:white;
@@ -57,7 +67,8 @@ header {
 }
 
 /* thông báo */
-.thong-bao{   
+.thong-bao{  
+     
     z-index: 999;
     background-color:rgb(255, 255, 255);
     position:absolute;
@@ -65,20 +76,22 @@ header {
     width: 700%;
     right: -10px;
     max-height: 400px;
-    box-sizing: border-box;
     border: 1px solid rgb(190, 190, 190);   
     box-shadow: 0 0 10px rgb(68, 68, 68);
     /* display:none; */
     opacity :0;
     transition: 0.5s;   
-    visibility: hidden; /* Ẩn hoàn toàn */
     /* pointer-events: none; */
+    border-radius: 5px;
+
 }
+
 .hienTB{
     /* display:block;   */
     opacity : 1;
     visibility:visible;
 }
+
 .thong-bao::before{
     content: "";
     position: absolute;
@@ -89,41 +102,57 @@ header {
     border-style:solid;
     border-color: transparent transparent rgb(255, 255, 255) transparent;
 }
-.thong-bao div:nth-child(even){
+/* .thong-bao div:nth-child(even){
     background-color:rgb(220, 209, 252);
+} */
+ .thong-bao p{
+    text-align: center;
+ }
+.thong-bao div{
+    border-bottom: 1px solid rgb(202, 202, 202);
+    
+    margin:0 10px;
+    
 }
-
 .thong-bao div a{
+    
+    transition: 0.5s;
     padding: 10px;
     display:flex;
     height: 50px;
     align-items: center;
 }
+.thong-bao div a:hover{
+    /* background-color: #ffd6e9; */
+    transform: translateX(10px);
+}
 .thong-bao div p {
-    margin:0;
+    margin-left: 10px;
 }
 .thong-bao div i {
 
     font-size: 30px;
     align-items: center;
-    transform:translateY(5px);
+    transform:translateY(-2px);
     /* margin-right: 10px; */
 }
 /* list viec lam */
 .menu{
-    box-sizing: border-box;
     z-index: 999;
-    background-color:rgb(185, 220, 250);
+    background-color:rgb(255, 255, 255);
     position:absolute;
     top :138%;
-    width: 700%;
+    width: 800%;
     right: -10px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    /* overflow: hidden; */
+    border-radius: 5px;
     opacity :0;
+    box-shadow: 0 0 10px rgb(68, 68, 68);
+
     transition: 0.5s;   
     visibility: hidden; /* Ẩn hoàn toàn */
+}
+.menu>p:first-child{
+    text-align: center;
 }
 .hienMN{
     opacity : 1;
@@ -148,10 +177,23 @@ header {
     background: rgba(200, 200, 200, 0.5); /* Màu nền cho khu vực thanh cuộn */
     border-radius: 10px; /* Bo góc cho khu vực thanh cuộn */
 }
-.menu p{
+.list-menu{
+    margin: 0 10px;
+}
+.list-menu>div{
+    border-bottom: 1px solid rgb(202, 202, 202);
+    overflow: hidden;
+}
+.list-menu a{
+    text-decoration: none;
+    display: block;
     padding: 0 10px;
     margin: 0;
-    height: 70px;
+    height: 50px;
+    transition: 0.5s;
+}
+.list-menu a:hover{
+    transform: translateX(10px);
 }
 .menu::before{
     content: "";
@@ -161,27 +203,39 @@ header {
     right: 15px;
     border-width: 15px 15px;
     border-style:solid;
-    border-color: transparent transparent rgb(185, 220, 250) transparent;
-}
-.menu p:nth-child(even){
-    background-color:aliceblue;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+
 }
 
 /* profile */
 .imgmeo .profile{
+    box-shadow: 0 0 10px rgb(68, 68, 68);
     z-index: 999;
-
     position:absolute;
-    background-color:rgb(185, 220, 250);
+    background-color:rgb(255, 255, 255);
     top :138%;
     width: 700%;
     right: -10px;
     max-height: 400px;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 5px;
     opacity :0;
     transition: 0.5s;   
     visibility:hidden;
+}
+.profile div{
+    margin: 0 10px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+.profile div a{
+    display: block;
+    padding: 0 10px;
+    margin: 0;
+    height: 50px;
+    transition: 0.5s;
+}
+.profile div a:hover{
+    transform: translateX(10px);
 }
 .header-right .imgmeo{
 
@@ -198,7 +252,7 @@ header {
     right: 15px;
     border-width: 15px 15px;
     border-style:solid;
-    border-color: transparent transparent rgb(185, 220, 250) transparent;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
 }
 .profile.hienPF{
     opacity:1;
@@ -206,74 +260,76 @@ header {
 }
 
 /* body */
-
-
-
 .body{
-    position:relative;
-    width: 100%;
-    /* box-sizing: border-box; */
 }
-.traibody h1 {
-    color:rgb(109, 109, 109);
-
+.traibody h1{
+    text-align: center;
+    background-color: #3452ff;
+    border-radius: 5px;
+    color:#f9fafc;
+}
+.traibody ul a{
+    text-decoration: none;
+    
 }
 .traibody ul li{
     text-decoration: none;
     list-style: none;
+    line-height : 30px;
+    transition: 0.1s;
 }
 .traibody ul li:hover{
-    
-    background-color: #3452ff;
-    cursor: pointer;
-}
-.hangtrai{
-    background-color: #3452ff;
-}
-.main{
-    width: 100%;
-    /* position:absolute; */
-    background-color: #f9fafc;
-    padding: 5%;
-    /* box-sizing: border-box; */
-}
-.list-menu{
-}
-.list-url div{
-    /* padding: 10px; */
-    /* height: 200px; */
-    margin-bottom: 10px;
-}
-.hang1 div:first-child {
+    border: 3px solid transparent;
+    animation: changeColor 2s infinite;
+    border-radius: 5px;
 }
 .hang1{
-    padding:0;
 }
-.list-url div img{
-    width:90%;
-    transition: 0.5s;    
-    height: 160px;
-    max-width: 100%;
+.main{
+    background-color: #f9fafc;
+    padding-top: 50px;
 }
-.div-trong div{
-    cursor: pointer;
-    box-shadow: 0 0 10px rgb(68, 68, 68);
+.div-trong{
     text-align: center;
-    background-color: #ffffff;
-    /* flex-direction:column; */
-    border-radius: 5px;
-    padding-top: 30px;
-    height: 240px;
 }
-.div-trong div p{
-    padding:0;
-    margin: 0;
+
+.div-trong div{
+    margin  : 15px;  
+    box-shadow: 0 0 10px rgb(141, 141, 141);
+    border-radius: 5px;
+    cursor: pointer;
+    padding-bottom: 1%;
+    
+    
+}
+.main .div-trong a{
+    text-decoration: none;
+    color:rgb(61, 61, 61);
+}
+.main .div-trong a img{
+
+    padding-top: 20px;
+    width:80%;
+    transition: 0.5s;    
+    height: 200px;
 }
 .div-trong div:hover img{
     transform: translateY(-15px);
+}
+
+@keyframes changeColor {
+    0% {
+        border-bottom-color: red;
+        border-right-color: red;
+    }
+    100% {
+        border-bottom-color: blue;
+        border-right-color: blue;
+    }
 }
 
 /* footer */
 footer{
     text-align: center;
 }
+

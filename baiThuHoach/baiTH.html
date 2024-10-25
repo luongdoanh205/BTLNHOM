@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bTHoach.css">
+</head>
+<body>
+    
+    <div class="container"> 
+        <h3>Danh sách Bài thu hoạch hiện có</h3>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>TT</th>
+                    <th>TÊN BÀI THU HOẠCH</th>
+                    <th>NĂM HỌC</th>
+                    <th>HỌC KỲ</th>
+                    <th>THỜI GIAN</th>
+                    <th>TRẠNG THÁI</th>
+                </tr>
+            </thead>
+            <tbody class="bang1">
+                <tr onclick="hien()" class="hang1">
+                    <td>1</td>
+                    <td>Bài 1</td>
+                    <td>2023</td>
+                    <td>Kỳ 1</td>
+                    <td>1 Tháng</td>
+                    <td>Chưa hoàn thành</td>
+                </tr>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+    
+        <h3>Danh sách Bài thu hoạch đã hoàn thành</h3>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>TT</th>
+                    <th>TÊN BÀI THU HOẠCH</th>
+                    <th>NĂM HỌC</th>
+                    <th>HỌC KỲ</th>
+                    <th>THỜI GIAN</th>
+                    <th>TRẠNG THÁI</th>
+                </tr>
+            </thead>
+            <tbody class="bang2">
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="wrapper">   
+    <form action="">
+        <h1>BÀI THU HOẠCH</h1>
+        <p>1. Mức độ hiểu rõ về SHCD</p>
+        <div>
+            <div>
+                <input type="radio" id="khongtot" name="hieu_shcd" value="Không tốt">
+                <label for="khongtot">Không tốt</label>
+            </div>
+            <div>
+                <input type="radio" id="tot" name="hieu_shcd" value="Tốt">
+                <label for="tot">Tốt</label>
+            </div>
+            <div>
+                <input type="radio" id="rattot" name="hieu_shcd" value="Rất tốt">
+                <label for="rattot">Rất tốt</label>
+            </div>
+        </div>
+
+        <p>2. Bạn có hài lòng về chương trình học</p>
+        <div>
+            <div>
+                <input type="radio" id="khongtot2" name="hai_long" value="Không tốt">
+                <label for="khongtot2">Không tốt</label>
+            </div>
+            <div>
+                <input type="radio" id="tot2" name="hai_long" value="Tốt">
+                <label for="tot2">Tốt</label>
+            </div>
+            <div>
+                <input type="radio" id="rattot2" name="hai_long" value="Rất tốt">
+                <label for="rattot2">Rất tốt</label>
+            </div>
+        </div>
+
+        <div class="button-wr">
+            <button type="reset" onclick="huy()">Hủy</button>
+            <button type="button" onclick="send()">Hoàn thành</button>
+        </div>
+    </form>
+    <script src="./btH.js"></script>
+</div>
+
+</body>
+</html>
