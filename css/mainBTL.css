@@ -83,6 +83,7 @@ header {
     transition: 0.5s;   
     /* pointer-events: none; */
     border-radius: 5px;
+    visibility:hidden;
 
 }
 
@@ -330,6 +331,7 @@ header {
 
 /* footer */
 footer{
+    margin: 20px 0;
     text-align: center;
 }
 
