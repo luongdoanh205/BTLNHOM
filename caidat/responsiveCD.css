@@ -20,4 +20,12 @@
     .person1{
         width: 90%;
     }
+    .sodienthoai input {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .sodienthoai{
+        width: 80%;
+    }
 }
