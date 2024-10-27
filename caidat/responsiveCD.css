@@ -23,6 +23,9 @@
     .sodienthoai input {
         width: 80%;
     }
+    .list-dt{
+        height: 100px;
+    }
 }
 @media (max-width: 768px) {
     .sodienthoai{
