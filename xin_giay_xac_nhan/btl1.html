@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giấy xác nhận sinh viên - Hệ thống thông tin sinh viên</title>
+
+    <link rel="stylesheet" href="btl1.css">
+</head>
+<body>
+    <div class="header">
+        <img alt="University Logo" height="50" src="./images/logoUTC.png" width="50"/>
+        <div class="header2">
+            <h1>Trường ĐH Giao thông vận tải</h1>
+            <h2>UNIVERSITY OF TRANSPORT AND COMMUNICATIONS</h2>
+        </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="welcome">XIN CHÀO!</div>
+        <div class="section-title">CẤP GIẤY XÁC NHẬN SINH VIÊN</div>
+        <div class="form-group">
+            <label for="loai-giay">Chọn loại giấy xác nhận:</label>
+            <select id="loai-giay">
+                <option value="">-- Chọn loại giấy --</option>
+                <option value="Giấy xác nhận sinh viên để vay vốn tại NHCSXH địa phương">
+                    Giấy xác nhận sinh viên để vay vốn tại NHCSXH địa phương
+                </option>
+                  <option value="Giấy xác nhận sinh viên để hưởng ưu đãi giáo dục">
+                    Giấy xác nhận sinh viên để hưởng ưu đãi giáo dục
+                </option>
+                  <option value="Giấy xác nhận sinh viên cho những vấn đề cá nhân khác">
+                    Giấy xác nhận sinh viên cho những vấn đề cá nhân khác
+                </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button onclick="addRow()">Xin cấp giấy XNSV</button>
+        </div>
+        <div class="section-title">DANH SÁCH GIẤY XÁC NHẬN SINH VIÊN ĐÃ XIN CẤP</div>
+        <div class="table-container">
+            <table id="confirmation-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>LOẠI GIẤY</th>
+                        <th>NGÀY TẠO</th>
+                        <th>TRẠNG THÁI</th>
+                        <th>NƠI NHẬN</th>
+                        <th>GHI CHÚ</th>
+                        <th>HỦY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                                          </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<div class="footer">
+    <p>
+        Copyright © 2024 Trung tâm Ứng dụng CNTT - ĐH Giao thông vận tải
+    </p>
+</div>
+    <script src="btl1.js"></script>
+</body>
+</html>
