@@ -1,0 +1,119 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-image: linear-gradient(45deg, #3452ff 0%, #ff1053 100%);
+     color: #ffffff;
+     padding: 10px 20px;
+     display: flex;
+ }
+ .header img {
+     margin-top: 10px;
+     height: 100px;
+     width: 100px;
+ 
+ }
+ .main-content {
+    padding: 20px;
+}
+.welcome {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color:red ;
+}
+.section-title {
+    font-size: 24px;
+    color: #ff005e;
+    margin: 10px 0;
+    border-bottom: 2px solid #ff005e;
+ 
+    padding-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+   
+} 
+.container {
+    background-color: white;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    
+}
+.container h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.text-center input[type="submit"] {
+
+    font-weight: 700;
+}
+.text-center input[type="submit"]:hover {
+    background-color: #ffffff;
+}
+.footer{
+    margin: 20px 0;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .header {
+    
+       
+        text-align: center;
+    }
+    .header2 {
+        padding: 20px;
+    }
+    .header img {
+        margin-bottom: 10px;
+    }
+
+    .header2 h1 {
+        font-size: 1em;
+    }
+
+    .header2 h2 {
+        font-size: 0.8em;
+    }
+
+    .container {
+        justify-content: flex-end;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 5px 15px;
+       
+    }
+
+    button#confirmButton {
+        font-size: 0.9em;
+    }
+}

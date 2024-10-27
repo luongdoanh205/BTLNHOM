@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mẫu đăng ký</title>
+    <link rel="stylesheet" href="kituc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img alt="University Logo" height="50" src="./images/logoUTC.png" width="50"/>
+        <div class="header2">
+            <h1>Trường ĐH Giao thông vận tải</h1>
+            <h2>UNIVERSITY OF TRANSPORT AND COMMUNICATIONS</h2>
+        </div>  
+        </div>
+    <div class="main-content">
+        <div class="welcome">XIN CHÀO!</div>
+        <div class="section-title">ĐĂNG KÝ KÍ TÚC XÁ SINH VIÊN</div>
+    <div class="container">
+        <h2>Thông Tin Sinh Viên Đăng Ký</h2>
+        <form id="student-form">
+            <div class="form-group">
+                <label for="student-id">Họ và Tên</label>
+                <input type="text" id="student-id" name="student-id" required>
+            </div>
+            <div class="form-group">
+                <label for="first-name">Mã Sinh Viên</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Quê Quán</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số Điện Thoại</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Giới Tính</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Chọn Giới Tính</option>
+                    <option value="male">Nam</option>
+                    <option value="female">Nữ</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dob">Ngày Sinh</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Loại Phòng</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Chọn Loại Phòng</option>
+                    <option value="male">Loại 1(960k/tháng/4 người)</option>
+                    <option value="female">Loại 2(960k/tháng/6 người)</option>
+                    <option value="female">Loại 3(1920k/tháng/4 người, đầy đủ chức năng sinh hoạt)</option>
+                    <option value="female">Loại 4(1920k/tháng/6 người, đầy đủ chức năng sinh hoạt)</option>
+                   
+                </select>
+            </div>
+            <button type="button" id="confirmButton">Xác Nhận</button>
+        </form>
+    </div>
+<div class="footer">
+    <p>
+        Copyright © 2024 Trung tâm Ứng dụng CNTT - ĐH Giao thông vận tải
+    </p>
+</div>
+    <script src="kituc.js"></script>
+</body>
+</html>
