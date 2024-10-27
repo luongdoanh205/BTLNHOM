@@ -1,0 +1,12 @@
+@media (max-width :576px){
+.wrapper>form{
+    width: 80%;
+}
+h3{
+    margin-left: 20px;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+}

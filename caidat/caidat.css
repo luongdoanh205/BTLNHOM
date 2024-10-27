@@ -1,0 +1,198 @@
+
+.body-l {
+    background-color: rgb(242, 242, 242);
+    height:100%;
+}
+.hang1 {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.body-l img {
+    margin-right: 10px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.hang1 div p {
+    color: rgb(134, 134, 134);
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+}
+.hang1 div p:first-child {
+    color: rgb(53, 53, 53);
+    font-weight: 600;
+}
+.hang2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.the-a{
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+
+}
+.hang2 p {
+    margin: 0;
+}
+.hang2 i {
+    margin-right: 10px;
+}
+.hang2:hover {
+    background-color: rgb(180, 180, 180);
+}
+/* Áp dụng đổi màu khi phần tử được nhắm đến bởi :target */
+.hang2:target {
+    background-color: rgb(252, 252, 252);   
+    box-shadow: 0 0 5px rgb(148, 148, 148);
+    color: rgb(53, 53, 53);
+    font-weight: 500;
+}
+.hang2:target i{
+    color:blue;
+}
+.content-section{
+    margin-top: 20px;
+    display: none;
+    padding: 0 20px;
+}
+.content-section h1{
+    font-weight: 400;
+}
+
+.active{
+    display:block;
+}
+.bangtrai{
+    box-shadow: 0 0 2px rgb(153, 153, 153);
+    width: 70%;
+}
+.list-dt{
+    font-size: 13px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+.list-dt>a{
+    width: 33.3333%;
+    color:blue;
+    text-decoration: none;
+}
+.list-dt>a{
+    
+}
+.list-dt>p{
+    
+    width: 33.3333%;
+    margin: 0;
+}
+
+.list-dt>div{
+    padding-left: 20px;
+    width: 33.3333%;
+    display: flex;
+    align-items: center;
+}
+.list-dt>div p{
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+
+.thay{
+    display: none;
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+
+}
+.themWr{
+    display:flex;
+}
+.sodienthoai{
+    padding: 20px 30px;
+    position:absolute;
+    height: 60%;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    
+}
+.sodienthoai label{
+    display: block;
+}
+.sodienthoai div{
+    right: 0;
+    bottom: 0;
+    position:absolute;
+    display:inline-block;
+    margin: 30px;
+}
+.sodienthoai input{
+    margin-bottom: 20px;
+    border-color: blue;
+    border-radius: 3px;
+}
+.sodienthoai input:focus{
+    outline: none;
+    border-color: rgb(247, 105, 152);
+}
+
+.sodienthoai div button{
+    width: 80px;
+    border: 1px solid rgb(122, 122, 122);
+    background-color:white;
+    border-radius: 2px;
+}
+.sodienthoai div button:hover{
+    background-color: rgb(242, 242, 242);
+    
+}
+.nhapSdt >p{
+    color:red;
+    margin: 0;
+    font-size: 12px;
+    display: none;
+}
+.person1{
+    margin: auto;
+    text-align: center;
+    width: 400px ;
+    height: 500px;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(199, 199, 199);
+    border-radius: 5px;
+    padding: 0 40px;
+}
+.person1>i{
+    font-size: 100px;
+    color: rgb(110, 110, 110);
+}
+.person1 p{
+    padding: 20px 0;
+    border-top: 2px solid rgba(170, 170, 170, 0.5);
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 30px;
+}
+.person1 p i{
+    padding-right: 10px;
+}
+
+.person1 h1{
+    font-size: 40px;
+}
+

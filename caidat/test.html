@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Không Load Lại</title>
+    <style>
+        .content-section {
+            display: none; /* Mặc định ẩn các phần nội dung */
+        }
+        .content-section.active {
+            display: block; /* Hiển thị phần nội dung khi active */
+        }
+        .menu button {
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu">
+    <button onclick="showSection('section1')">Mục 1</button>
+    <button onclick="showSection('section2')">Mục 2</button>
+    <button onclick="showSection('section3')">Mục 3</button>
+</div>
+
+<div id="section1" class="content-section active">
+    <h2>Nội dung Mục 1</h2>
+    <p>Đây là nội dung của mục 1.</p>
+</div>
+<div id="section2" class="content-section">
+    <h2>Nội dung Mục 2</h2>
+    <p>Đây là nội dung của mục 2.</p>
+</div>
+<div id="section3" class="content-section">
+    <h2>Nội dung Mục 3</h2>
+    <p>Đây là nội dung của mục 3.</p>
+</div>
+
+<script>
+    function showSection(sectionId) {
+        // Ẩn tất cả các phần nội dung
+        document.querySelectorAll('.content-section').forEach(function(section) {
+            section.classList.remove('active');
+        });
+
+        // Hiển thị phần nội dung đã chọn
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>

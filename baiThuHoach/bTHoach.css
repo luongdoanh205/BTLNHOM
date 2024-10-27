@@ -1,15 +1,18 @@
+html, body{
+    margin: 0;
+    padding: 20px 20px;
+}
 .container {
     width: 100%;
-    margin: 20px 0;
 }
 
 .styled-table {
+    box-sizing: border-box;
     width: 100%;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
     font-family: 'Arial', sans-serif;
-    min-width: 400px;
     text-align: left;
 }
 
@@ -60,7 +63,7 @@ h3 {
     top:-100%;
     transition: 1s;
 }
-.wrapper>form{
+.wrapper>form{  
     padding: 0 10px;
     /* display: flex; */
     max-height: 500px;
