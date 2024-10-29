@@ -22,6 +22,7 @@ body {
 
 .main-content {
     padding: 20px;
+
 }
 .welcome {
     font-size: 25px;
@@ -33,7 +34,7 @@ body {
     color: #ff005e;
     margin: 10px 0;
     border-bottom: 2px solid #ff005e;
- 
+    text-transform: uppercase;
     padding-bottom: 5px;
     text-align: center;
     justify-content: center;
@@ -78,8 +79,8 @@ table th, table td {
 
 }
 table th {
-    background-color: #ffffff;
-    border: 2px solid #ddd;
+    background-color: #33CCFF;
+    /* border: 2px solid #ddd; */
 }
 table td {
     background-color: #ffffff;
@@ -98,17 +99,36 @@ table td {
     border-radius: 50%;
     padding: 5px 10px;
 }
+.h1{
+    color: #ff1053;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 2px solid #ff005e;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.luu-y{
+    border:1px solid #8adbf6;
+    background-color: #d9edf7;
+    border-radius: 4px;
+    color: #31708f;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin: 10px;
+}
 .footer{
     margin: 50px 0;
     text-align: center;
     color: black;
 }
-/* Responsive styles for mobile devices */
 @media (max-width: 768px) {
     .header {
     
-       
+       width: 100%;
         text-align: center;
+        font-size: larger;
     }
     .header2 {
         padding: 20px;
@@ -126,13 +146,15 @@ table td {
     }
 
     .main-content {
-        padding: 10px;
+
+        width: 100%;
     }
     .welcome {
         font-size: 18px;
     }
     .section-title {
         font-size: 18px;
+        width: 100%;
     }
     .form-group select, .form-group button {
         padding: 8px;
@@ -142,5 +164,31 @@ table td {
     }
     table th, table td {
         padding: 8px;
+    }
+    .h1{
+        color: #ff1053;
+        font-size: 24px;
+        text-align: center;
+        border-bottom: 2px solid #ff005e;
+        margin-bottom: 20px;
+        margin-left: 41px;
+
+    }
+    .luu-y{
+        border:1px solid #8adbf6;
+        background-color: #d9edf7;
+        border-radius: 4px;
+        color: #31708f;
+        padding: 5px;
+        margin: 20px;
+        width: 97%;
+
+    }
+    .footer{
+        margin: 50px 0;
+        text-align: center;
+        color: black;
+        font-size: 0.8em;
+        padding-left: 30px;
     }
 }
