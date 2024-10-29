@@ -11,9 +11,9 @@ function addRow() {
     var loaiGiayCell = newRow.insertCell(1);
     var ngayTaoCell = newRow.insertCell(2);
     var trangThaiCell = newRow.insertCell(3);
-    var noiNhanCell = newRow.insertCell(4);
-    var ghiChuCell = newRow.insertCell(5);
-    var huyCell = newRow.insertCell(6);
+    // var noiNhanCell = newRow.insertCell(4);
+    var ghiChuCell = newRow.insertCell(4);
+    var huyCell = newRow.insertCell(5);
 
     var rowCount = table.rows.length;
     sttCell.innerHTML = rowCount -1;
@@ -25,7 +25,7 @@ function addRow() {
     ngayTaoCell.innerHTML = dateString;
 
     trangThaiCell.innerHTML = "Chờ xác nhận!";
-    noiNhanCell.innerHTML = "";
+    // noiNhanCell.innerHTML = "";
     ghiChuCell.innerHTML = "";
     huyCell.innerHTML = '<button onclick="deleteRow(this)">Hủy</button>';
 }
