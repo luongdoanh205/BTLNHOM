@@ -116,7 +116,7 @@ header {
     
 }
 .thong-bao div a{
-    
+    text-decoration: none;
     transition: 0.5s;
     padding: 10px;
     display:flex;
@@ -229,6 +229,7 @@ header {
     border-bottom: 1px solid rgb(202, 202, 202);
 }
 .profile div a{
+    text-decoration: none;
     display: block;
     padding: 0 10px;
     margin: 0;
