@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> 
+        <img class="logo" src="./logo.png" alt="logo">
+    </header>
+    <div class="container">
+        <div class="header">
+            <h2>THANH TOÁN</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <h3>69,500,000</h3>
+                <p>Khoản phải nộp</p>
+                <button onclick="openModal('detail')">Chi tiết</button>
+            </div>
+            <div class="card">
+                <h3>0</h3>
+                <p>Khoản được miễn</p>
+                <button onclick="openModal('detail6')">Chi tiết</button>
+            </div>
+            <div class="card">
+                <h3>44,500,000</h3>
+                <p>Khoản đã nộp</p>
+                <button onclick="openModal('detail3')">Chi tiết</button>
+            </div>
+            <div class="card">
+                <h3>0</h3>
+                <p>Khoản đã rút</p>
+                <button onclick="openModal('detail5')">Chi tiết</button>
+            </div>
+            <div class="card">
+                <h3>25,000,000</h3>
+                <p>Tổng nợ chung các khoản</p>
+                <button onclick="openModal('detail7')">Chi tiết</button>
+            </div>
+            <div class="card">
+                <h3>44,500,000</h3>
+                <p>Danh sách phiếu đã thu</p>
+                <button onclick="openModal('detail2')">Chi tiết</button>
+            </div>
+            <div class="card">
+                <h3>0</h3>
+                <p>Danh sách phiếu đã rút</p>
+                <button onclick="openModal('detail8')">Chi tiết</button>
+            </div>
+            <div class="card">
+                <h3>44,500,000</h3>
+                <p>Danh sách phiếu hóa đơn</p>
+                <button onclick="openModal('detail4')">Chi tiết</button>
+            </div>
+            <div class="card">
+                <h3>Thanh toán</h3>
+                <button onclick="openModal('detail1')">Chi tiết</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="detail">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('detail')">&times;</span>
+            <h2>Danh sách khoản phải đóng</h2>
+            <table>
+                <tr>
+                    <th>Stt</th>
+                    <th>Học kỳ</th>
+                    <th>Loại khoản</th>
+                    <th>Số tiền</th>
+                    <hr>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2024-2025</td>
+                    <td>Học phí(1)</td>
+                    <td>15,000,000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2024-2025</td>
+                    <td>Kí túc xá</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2023-2024</td>
+                    <td>Học phí(GDTC,GDQP)</td>
+                    <td>3,000,000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>2023-2024</td>
+                    <td>Học phí(2)</td>
+                    <td>15,000,000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>2023-2024</td>
+                    <td>BHYT</td>
+                    <td>1,000,000</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>2023-2024</td>
+                    <td>Kí túc xá</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2023-2024</td>
+                    <td>Khảo sát tiếng Anh</td>
+                    <td>500,000</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>2023-2024</td>
+                    <td>Học phí(1)</td>
+                    <td>15,000,000</td>
+                </tr>
+                <tr class="last">
+                    <td colspan="4"><b>Tổng: 69,500,000</b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="modal" id="detail1">
+        <div class="modal1">
+            <span class="close" onclick="closeModal('detail1')">&times;</span>
+            <img class="qr" src="./6e8cd5ee-9439-4a42-a261-3c68712bd3c3.jpg" alt="qr">
+            <div class="tt">
+                <table class="tt">
+                    <tr>
+                        <th>Stt</th>
+                        <th>Học kỳ</th>
+                        <th>Loại khoản</th>
+                        <th>Số tiền</th>
+                        <hr>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2024-2025</td>
+                        <td>Kí túc xá</td>
+                        <td>10,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2024-2025</td>
+                        <td>Học phí</td>
+                        <td>15,000,000</td>
+                    </tr>
+                    <tr class="last">
+                        <td colspan="4"><b>Tổng: 25,000,000</b></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="detail2">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('detail2')">&times;</span>
+            <h2>Danh sách đã đóng</h2>
+            <table>
+                <tr>
+                    <th>Stt</th>
+                    <th>Học kỳ</th>
+                    <th>Loại khoản</th>
+                    <th>Số tiền</th>
+                    <hr>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2023-2024</td>
+                    <td>Học phí(2)</td>
+                    <td>15,000,000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2023-2024</td>
+                    <td>Học phí(GDTC,GDQP)</td>
+                    <td>3,000,000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2023-2024</td>
+                    <td>Khảo sát tiếng Anh</td>
+                    <td>500,000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>2023-2024</td>
+                    <td>BHYT</td>
+                    <td>1,000,000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>2023-2024</td>
+                    <td>Kí túc xá</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>2023-2024</td>
+                    <td>Học phí(1)</td>
+                    <td>15,000,000</td>
+                </tr>
+                <tr class="last">
+                    <td colspan="4"><b>Tổng: 44,500,000</b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="modal" id="detail3">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('detail3')">&times;</span>
+            <h2>Khoản đã nộp</h2>
+            <table>
+                <tr>
+                    <th>Stt</th>
+                    <th>Học kỳ</th>
+                    <th>Loại khoản</th>
+                    <th>Số tiền</th>
+                    <hr>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2023-2024</td>
+                    <td>Học phí(2)</td>
+                    <td>15,000,000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2023-2024</td>
+                    <td>Học phí(GDTC,GDQP)</td>
+                    <td>3,000,000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2023-2024</td>
+                    <td>Khảo sát tiếng Anh</td>
+                    <td>500,000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>2023-2024</td>
+                    <td>BHYT</td>
+                    <td>1,000,000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>2023-2024</td>
+                    <td>Kí túc xá</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>2023-2024</td>
+                    <td>Học phí(1)</td>
+                    <td>15,000,000</td>
+                </tr>
+                <tr class="last">
+                    <td colspan="4"><b>Tổng: 44,500,000</b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="modal" id="detail4">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('detail4')">&times;</span>
+            <h2>Danh sách phiếu hóa đơn</h2>
+            <table>
+                <tr>
+                    <th>Stt</th>
+                    <th>Học kỳ</th>
+                    <th>Loại khoản</th>
+                    <th>Số tiền</th>
+                    <hr>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2023-2024</td>
+                    <td>Học phí(2)</td>
+                    <td>15,000,000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2023-2024</td>
+                    <td>Học phí(GDTC,GDQP)</td>
+                    <td>3,000,000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2023-2024</td>
+                    <td>Khảo sát tiếng Anh</td>
+                    <td>500,000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>2023-2024</td>
+                    <td>BHYT</td>
+                    <td>1,000,000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>2023-2024</td>
+                    <td>Kí túc xá</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>2023-2024</td>
+                    <td>Học phí(1)</td>
+                    <td>15,000,000</td>
+                </tr>
+                <tr class="last">
+                    <td colspan="4"><b>Tổng: 44,500,000</b></td>
+                </tr>
+            </table>
+        </div>
+    </div>    
+    <div class="modal" id="detail5">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('detail5')">&times;</span>
+            <h2>Khoản được miễn</h2>
+            <table>
+                <tr>
+                    <th>Stt</th>
+                    <th>Học kỳ</th>
+                    <th>Loại khoản</th>
+                    <th>Số tiền</th>
+                    <hr>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="modal" id="detail6">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('detail6')">&times;</span>
+            <h2>Khoản đã rút</h2>
+            <table>
+                <tr>
+                    <th>Stt</th>
+                    <th>Học kỳ</th>
+                    <th>Loại khoản</th>
+                    <th>Số tiền</th>
+                    <hr>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="modal" id="detail7">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('detail7')">&times;</span>
+            <h2>Tổng nợ chung các khoản</h2>
+            <table>
+                <tr>
+                    <th>Stt</th>
+                    <th>Học kỳ</th>
+                    <th>Loại khoản</th>
+                    <th>Số tiền</th>
+                    <hr>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2024-2025</td>
+                    <td>Kí túc xá</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2024-2025</td>
+                    <td>Học phí</td>
+                    <td>15,000,000</td>
+                </tr>
+                <tr class="last">
+                    <td colspan="4"><b>Tổng: 25,000,000</b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="modal" id="detail8">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('detail8')">&times;</span>
+            <h2>Danh sách phiếu đã rút</h2>
+            <table>
+                <tr>
+                    <th>Stt</th>
+                    <th>Học kỳ</th>
+                    <th>Loại khoản</th>
+                    <th>Số tiền</th>
+                    <hr>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
