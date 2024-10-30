@@ -46,5 +46,7 @@ document.querySelector('.guiSdt').onclick = () => {
     if(kt1 == true && kt2 == true){
         console.log('KKKK')        
         hienSdt.classList.remove('themWr');
+    } else{
+        alert('Cần điền đầy dủ thông tin');
     }
 }

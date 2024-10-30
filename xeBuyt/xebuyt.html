@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí vé xe buýt</title>
+
+    <link rel="stylesheet" href="xebuyt.css">
+</head>
+<body>
+    <div class="header">
+        <img alt="University Logo" height="50" src="logoUTC.png" width="50"/>
+        <div class="header2">
+            <h1>Trường ĐH Giao thông vận tải</h1>
+            <h2>UNIVERSITY OF TRANSPORT AND COMMUNICATIONS</h2>
+        </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="welcome">XIN CHÀO!</div>
+        <h1>Đăng ký làm vé tháng xe buýt</h1>
+        <p>Loại thẻ</p>
+        <input type="radio" name="option" value="option1" onclick="showAdditional()">Một tuyến
+        <input type="radio" name="option" value="option2" onclick="hideAdditional()">Liên tuyến<br>
+        <div id="additional-options" class="hidden">
+            <p>Chọn tuyến đăng ký</p>
+            <select id="loai-tuyen">
+            
+                <option value="01">
+                [01] - Bến xe Gia Lâm - Bến xe Yên Nghĩa
+            </option>
+                <option value="02">
+                [02] - Bác Cổ - Bến xe Yên Nghĩa
+            </option>
+                <option value="03">
+                [03] - Bến xe Giáp Bát - Bến xe Gia Lâm
+            </option>
+                <option value="03B">[03B] - Bến xe Nước Ngầm - Vincom - Phúc Lợi</option>
+                <option value="04">[04] - Long Biên - Bến xe Nước Ngầm</option>
+                <option value="05">[05] - KĐT Linh Đàm - Phú Diễn</option>
+                <option value="06A">[06A] - Bến xe Giáp Bát - Cầu Giẽ</option>
+                <option value="06B">[06B] - Bến xe Giáp Bát - Hồng Vân</option>
+                <option value="06C">[06C] - Bến xe Giáp Bát - Phú Minh</option>
+                <option value="06D">[06D] - Bến xe Giáp Bát - Tân Dân</option>
+                <option value="06E">[06E] - Bến xe Giáp Bát - Phú Túc</option>
+                <option value="07">[07] - Cầu Giấy - Nội Bài</option>
+                <option value="08A">[08A] - Long Biên - Đông Mỹ</option>
+                <option value="08ACT">[08ACT] - Long Biên - Đông Mỹ</option>
+                <option value="08B">[08B] - Long Biên - Vạn Phúc</option>
+                <option value="08BCT">[08BCT] - Long Biên - Vạn Phúc</option>
+                <option value="09">[09] - Bờ Hồ - Bờ Hồ</option>
+                <option value="09CT">[09CT] - Trần Khánh Dư - Trần Khánh Dư</option>
+                <option value="100">[100] - Long Biên - Khu đô thị Đặng Xá</option>
+            </select>
+        </div>
+        <div class="sdt">
+            <p>Số điện thoại</p>
+            <input type="text" name="sdt">
+        </div>
+        <p>Trường này bắt buộc phải điền.</p>
+        <p>Ảnh làm thẻ (File ảnh yêu cầu mặt nhìn thẳng, rõ mặt, nét ảnh, nền 1 màu, chấp nhận ảnh tự chụp đúng quy cách)</p>
+        <input class="nhap_anh" type="file" accept="image/*" id="imageInput">
+        <div>
+            <img id="previewImage" src="#" alt="Ảnh xem trước" style="max-width: 300px; display: none;">
+        </div>
+        <div class="form-group">
+            <button onclick="addRow()">Đăng ký</button>
+        </div>
+        <h1>Danh sách giấy Đăng ký làm vé tháng xe buýt đã xin cấp</h1>
+        <div class="table-container">
+            <table id="confirmation-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>LOẠI GIẤY</th>
+                        <th>NGÀY TẠO</th>
+                        <th>TRẠNG THÁI</th>
+                        <th>NƠI NHẬN</th>
+                        <th>GHI CHÚ</th>
+                        <th>HỦY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                                          </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1>Lưu ý</h1>
+        <div class="luu-y">
+            <p>- Ngày hẹn trả kết quả được xác định cụ thể như sau: Trả kết quả sau tối thiểu 12h làm việc; vào chiều thứ 2, sáng thứ 4 và sáng thứ 6 hàng tuần.</p>
+            <p>- Địa điểm nhận Tầng 1 nhà T1.</p>
+            <p>- Khi đến nhận kết quả sinh viên phải nộp 02 ảnh thẻ 3x4 (đã rửa).</p>
+            <p>- Kết quả sẽ được lưu tại PHòng trong vòng 2 tuần kể từ ngày hẹn trả kết quả. Sau thời gian lưu, nếu sinh viên không đến lấy thì phải đăng ký lại.</p>
+        </div>
+        
+    </div>
+    <footer>
+        <p>
+            Copyright © 2024 Trung tâm Ứng dụng CNTT - ĐH Giao thông vận tải
+        </p>
+    </footer>
+
+    <script src="xebuyt.js"></script>
+</body>
+</html>
