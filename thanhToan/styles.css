@@ -149,6 +149,11 @@ hr{
     margin: auto;
     font-size: larger;
 }
+footer{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
 @media (max-width: 860px) {
     header {
         height: auto;
