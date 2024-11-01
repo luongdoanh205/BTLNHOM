@@ -1,22 +1,23 @@
-// Kiểm tra xem Local Storage có hỗ trợ không
-function isLocalStorageSupported() {
-    try {
+function check() {
+    try{
         let test = "__test__";
         localStorage.setItem(test, test);
         localStorage.removeItem(test);
         return true;
-    } catch (e) {
+    } 
+    catch(e){
         return false;
     }
 }
-// Hàm lưu trữ thông tin vào Local Storage
-function capnhatthongtin() {
-    if (!isLocalStorageSupported()) {
+function capnhatthongtin(){
+    if(!check()) {
         alert("Trình duyệt của bạn không hỗ trợ Local Storage.");
         return;
     }
     const fieldNames = {
         hoten: "Họ và tên",
+        masv: "Mã sinh viên",
+        khoa: "Khóa",
         dantoc: "Dân tộc",
         tongiao: "Tôn giáo",
         quoctich: "Quốc tịch",
@@ -28,54 +29,62 @@ function capnhatthongtin() {
         diachibaotin: "Địa chỉ báo tin",
         sdtgiadinh: "Số điện thoại gia đình",
         lop: "Lớp",
+        mabhyt: "Mã số BHYT",
+        mabhxh: "Mã số BHXH",
         cmndnguoigiaho: "CMND/Thẻ căn cước của người giám hộ",
         hotenbo: "Họ tên Bố",
+        namsinhbo: "Năm sinh Bố",
         nghenghiepbo: "Nghề nghiệp, chức vụ Bố",
         noilamviecbo: "Nơi làm việc Bố",
+        dtbo: "Điện thoại Bố",
         hotenme: "Họ tên Mẹ",
+        namsinhme: "Năm sinh Mẹ",
         nghenghiepme: "Nghề nghiệp, chức vụ Mẹ",
-        noilamviecme: "Nơi làm việc Mẹ"
+        noilamviecme: "Nơi làm việc Mẹ",
+        dtme: "Điện thoại Mẹ"
     };
-    let isValid = true;
-    // Các trường bắt buộc
+    let c = true;
     const requiredFields = [
         "dantoc", "tongiao", "quoctich", "cmnd", "noicap",
         "hokhautinh", "hokhauquan", "hokhauxa", "diachibaotin",
         "sdtgiadinh", "lop", "cmndnguoigiaho", "hotenbo",
         "nghenghiepbo", "noilamviecbo", "hotenme", "nghenghiepme", "noilamviecme"
     ];
-    for (const field of requiredFields) {
+    for(const field of requiredFields){
         const value = document.getElementById(field).value.trim();
         if (!value) {
             alert(`Vui lòng nhập ${fieldNames[field]}.`);
-            isValid = false;
-            break; // Dừng lại nếu có trường không hợp lệ
+            c = false;
         }
-        localStorage.setItem(field, value); // Lưu thông tin nếu hợp lệ
+        localStorage.setItem(field, value);
     }
-    if (isValid) {
+    for(const field in fieldNames){
+        if (!requiredFields.includes(field)){
+            const value = document.getElementById(field).value.trim();
+            localStorage.setItem(field, value); 
+        }
+    }
+    if (c){
         alert("Thông tin đã được cập nhật!");
     }
 }
-// Hàm tải thông tin từ Local Storage khi trang tải lại
-function loadThongTin() {
-    if (!isLocalStorageSupported()) {
+function loadThongTin(){
+    if(!check()) {
         alert("Trình duyệt của bạn không hỗ trợ Local Storage.");
         return;
-    }   
+    }
     const fields = [
         "hoten", "masv", "khoa", "dantoc", "tongiao", "quoctich", "cmnd",
-        "ngaycap", "noicap", "hokhautinh", "hokhauquan", "hokhauxa",
+        "noicap", "hokhautinh", "hokhauquan", "hokhauxa",
         "diachibaotin", "sdtgiadinh", "lop", "mabhyt", "mabhxh", "cmndnguoigiaho",
         "hotenbo", "namsinhbo", "nghenghiepbo", "noilamviecbo", "dtbo",
         "hotenme", "namsinhme", "nghenghiepme", "noilamviecme", "dtme"
     ];
-    fields.forEach(field => {
+    fields.forEach(field =>{
         const value = localStorage.getItem(field);
-        if (value) {
+        if (value){
             document.getElementById(field).value = value;
         }
     });
 }
-// Gọi hàm loadThongTin khi tải trang
 window.onload = loadThongTin;
