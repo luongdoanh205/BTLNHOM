@@ -1,26 +1,25 @@
-function openModal(modalId) {
+function openModal(modalId){
     const modal = document.getElementById(modalId);
-    if (modal) {
+    if(modal){
         modal.style.display = 'flex';
-    } else {
+    } 
+    else{
         console.error(`Modal with id ${modalId} not found`);
     }
 }
-
-function closeModal(modalId) {
+function closeModal(modalId){
     const modal = document.getElementById(modalId);
-    if (modal) {
+    if(modal){
         modal.style.display = 'none';
-    } else {
+    } 
+    else{
         console.error(`Modal with id ${modalId} not found`);
     }
 }
-
-// Đóng modal khi nhấp ra ngoài nội dung modal
-window.addEventListener('click', function(event) {
+window.addEventListener('click', function(event){
     const modals = document.querySelectorAll('.modal');
-    modals.forEach(modal => {
-        if (event.target === modal) {
+    modals.forEach(modal =>{
+        if(event.target === modal){
             modal.style.display = 'none';
         }
     });
