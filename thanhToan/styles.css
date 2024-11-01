@@ -10,9 +10,8 @@ body{
     height: 100vh;
 }
 header{
-    height: 100px;
+    height: 145px;
     display: flex;
-    justify-content: space-between;
     background-image: linear-gradient(45deg, #3452ff 0%, #ff1053 100%);
     align-items: center;
     width: 100%;
@@ -36,7 +35,7 @@ header{
 }
 .box{
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /*Chia côtj*/
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
 }
 .card{
@@ -69,7 +68,20 @@ button:hover{
     background-color: #2563eb;
 }
 .logo{
-    padding: 10px 10px;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}
+.header2{
+    display:inline-block;
+    color:white;
+    margin-left: 0px;
+}
+.header2 h1{
+    margin: 20px 0px;
+}
+.header2 h2{
+    margin: 20px 0px;
 }
 .modal{
     display: none;
