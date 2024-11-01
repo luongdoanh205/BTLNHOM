@@ -74,6 +74,11 @@ button{
     width:570px;
     padding:2px;
 }
+footer{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
 @media(max-width: 860px){
     .header1{
         height: auto;
