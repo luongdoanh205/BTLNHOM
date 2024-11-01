@@ -1,4 +1,4 @@
-function check() {
+function check(){
     try{
         let test = "__test__";
         localStorage.setItem(test, test);
@@ -10,7 +10,7 @@ function check() {
     }
 }
 function capnhatthongtin(){
-    if(!check()) {
+    if(!check()){
         alert("Trình duyệt của bạn không hỗ trợ Local Storage.");
         return;
     }
@@ -52,19 +52,19 @@ function capnhatthongtin(){
     ];
     for(const field of requiredFields){
         const value = document.getElementById(field).value.trim();
-        if (!value) {
+        if(!value){
             alert(`Vui lòng nhập ${fieldNames[field]}.`);
             c = false;
         }
         localStorage.setItem(field, value);
     }
     for(const field in fieldNames){
-        if (!requiredFields.includes(field)){
+        if(!requiredFields.includes(field)){
             const value = document.getElementById(field).value.trim();
             localStorage.setItem(field, value); 
         }
     }
-    if (c){
+    if(c){
         alert("Thông tin đã được cập nhật!");
     }
 }
@@ -82,7 +82,7 @@ function loadThongTin(){
     ];
     fields.forEach(field =>{
         const value = localStorage.getItem(field);
-        if (value){
+        if(value){
             document.getElementById(field).value = value;
         }
     });
