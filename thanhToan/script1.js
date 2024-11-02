@@ -4,7 +4,7 @@ function openModal(modalId){
         modal.style.display = 'flex';
     } 
     else{
-        console.error(`Modal with id ${modalId} not found`);
+        console.error(`Không tìm thấy`);
     }
 }
 function closeModal(modalId){
@@ -13,7 +13,7 @@ function closeModal(modalId){
         modal.style.display = 'none';
     } 
     else{
-        console.error(`Modal with id ${modalId} not found`);
+        console.error(`Không tìm thấy`);
     }
 }
 window.addEventListener('click', function(event){
